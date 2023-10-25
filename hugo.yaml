@@ -2,28 +2,24 @@ baseURL: "https://josefsson.tech"
 title: josefsson.tech
 paginate: 5
 theme: PaperMod
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
 minify:
   disableXML: true
   minifyOutput: true
-
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: josefsson.tech
-  description: "Tech blog about random nice to know stuff"
-  keywords: [Blog, Tech, Homelab, K8S, Kubernetes, Nextcloud, PaperMod]
+  description: "Tech thoughts from a tech crazy person"
+  keywords: [Blog, Tech, Homelab, K8S, Kubernetes, Servers, Sysadmin, k8s-at-home Nextcloud, Security, Open source, FOSS]
   author: Anton Josefsson
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  # images: ["<link or path of image for opengraph, twitter-cards>"] ##SET THIS LATER
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
@@ -40,6 +36,7 @@ params:
   showtoc: false
   tocopen: false
 
+  #Add with stable diffusion later
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
@@ -53,34 +50,25 @@ params:
     text: "josefsson.tech"
     icon: /apple-touch-icon.png
     iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
-
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+      Title: Anton Josefsson
+      Content: >
+        - Privacy minded tech addict, Open Source enthusiast. Linux fanboy and (somewhat) of a Windows hater.
 
-  socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
-    - name: github
-      url: "https://github.com/"
+        - Who else can say that they have a Kubernets Cluster in their livingroom?
+
+        -
+
+        - Mostly writhing about things im doing and find interisting to share.
+
+  socialIcons: 
+      - name: "Github"
+        url: "https://github.com/s0undy"
+      - name: "Linkedin"
+        url: "https://www.linkedin.com/in/anton-josefsson-925103133"
+      - name: "Discord"
+        url: "https://discordapp.com/users/102349808819253248"
 
   cover:
     hidden: true # hide everywhere but not in structured data
